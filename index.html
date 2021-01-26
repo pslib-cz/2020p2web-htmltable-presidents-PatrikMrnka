@@ -5,8 +5,11 @@
     <title>Čeští a slovenští prezidenti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      table.presidents {width: 100%;}
-      .presidents th, .presidents td {border: 1px solid gray; padding: 5px;}
+      table.presidents {
+        width: 100%;
+        border-spacing: 0;
+      }
+      .presidents th, .presidents td {border: .5px solid gray; padding: 5px;}
       .presidents th {font-weight: 700; text-align: center;}
       .presidents td {font-weight: 400;}
       .presidents .komuniste {background-color: #c74d4d; color: yellow;}
@@ -14,6 +17,9 @@
       .presidents .roky {background-color: #D7CCC8;}
       .presidents .cr {background-color: #90CAF9;}
       .presidents .sr {background-color: #F8BBD0;}
+      .presidents .none {color: gray;}
+      .presidents thead th {border-bottom: 3px solid black}
+      .presidents tfoot th, .presidents tfoot td {border-top: 3px solid black}
     </style>
   </head>
   <body>
@@ -22,10 +28,10 @@
 
       <thead>
         <tr>
-          <th>Od</th>
-          <th>Do</th>
-          <th>Česko</th>
-          <th>Slovensko</th>
+          <th class="roky">Od</th>
+          <th class="roky">Do</th>
+          <th class="cr">Česko</th>
+          <th class="sr">Slovensko</th>
           <th>Poznámka</th>
         </tr>
       </thead>
@@ -44,10 +50,10 @@
             <td colspan="2" rowspan="2">Václav Havel</td>
             <td>Zvolen federálním shromážděním (s převahou poslanců KSČ)</td>
           </tr>
-          <tr>
+          <tr>9
             <th>1990</th>
             <th>1992</th>
-            <td>31. prosince 1992 zaniká Česko-Slovenská Federativní Republika</td>
+            <td>31. prosince 192 zaniká Česko-Slovenská Federativní Republika</td>
           </tr>
       </tbody>
       <tbody>
@@ -61,8 +67,8 @@
         <tr>
           <th class="roky">1998</th>
           <th class="roky">1999</th>
-          <td class="sr">bez prezidenta</td>
-          <td>Na Slovensku v této době byli pověřeni prezidenstkými pravomocemi tehdejší premiéři</td>
+          <td class="sr none">bez prezidenta</td>
+          <td class="none">Na Slovensku v této době byli pověřeni prezidenstkými pravomocemi tehdejší premiéři</td>
         </tr>
         <tr>
           <th class="roky">1999</th>
